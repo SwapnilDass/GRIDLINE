@@ -1,0 +1,25 @@
+services:
+  db:
+    image: postgres:16
+    container_name: gridline_db
+    environment:
+      POSTGRES_USER: gridline
+      POSTGRES_PASSWORD: gridline
+      POSTGRES_DB: gridline
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  api:
+    build: ./backend
+    container_name: gridline_api
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://gridline:gridline@db:5432/gridline
+    depends_on:
+      - db
+
+volumes:
+  pgdata:
