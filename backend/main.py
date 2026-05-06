@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 import os
 import psycopg2
 import psycopg2.extras
+import httpx
 
 # Create the FastAPI app instance
 app = FastAPI()
@@ -98,3 +99,16 @@ def live_timing(race_id: int):
         "race_id": race_id,
         "drivers": rows,
     }
+
+
+
+# Fetches the latest driver positions from the OpenF1 public API.
+# Uses session_key=latest to always target the most recent F1 session.
+# Returns raw position data as JSON — no database involved.
+
+@app.get("/f1/live")
+async def f1_live():
+    async with httpx.AsyncClient() as client:
+        response = await client.get("https://api.openf1.org/v1/position?session_key=latest")
+        response.raise_for_status()
+        return response.json()
