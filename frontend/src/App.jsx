@@ -1,35 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [drivers, setDrivers] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const fetchData = async () => {
+    const res = await fetch("http://localhost:8000/f1/live");
+    const data = await res.json();
+    setDrivers(data);
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    fetchData();
+    const interval = setInterval(fetchData, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="timing-board">
+      <h1>F1 Live Timing</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>POS</th>
+            <th>Driver</th>
+            <th>Team</th>
+          </tr>
+        </thead>
+        <tbody>
+          {drivers.map((d) => (
+            <tr key={d.driver_number}>
+              <td>{d.position}</td>
+              <td>
+                <span
+                  style={{
+                    borderLeft: `4px solid #${d.team_colour}`,
+                    paddingLeft: "8px",
+                  }}
+                >
+                  {d.name_acronym} — {d.full_name}
+                </span>
+              </td>
+              <td>{d.team_name}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 }
 
-export default App
+export default App;

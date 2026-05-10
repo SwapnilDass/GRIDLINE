@@ -1,12 +1,20 @@
+import asyncio
+
 from fastapi import FastAPI, HTTPException
 import os
 import psycopg2
 import psycopg2.extras
 import httpx
+from fastapi.middleware.cors import CORSMiddleware
 
 # Create the FastAPI app instance
 app = FastAPI()
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 def get_conn():
     """
@@ -109,6 +117,37 @@ def live_timing(race_id: int):
 @app.get("/f1/live")
 async def f1_live():
     async with httpx.AsyncClient() as client:
-        response = await client.get("https://api.openf1.org/v1/position?session_key=latest")
-        response.raise_for_status()
-        return response.json()
+        pos_res, drv_res = await asyncio.gather(
+            client.get("https://api.openf1.org/v1/position?session_key=latest"),
+            client.get("https://api.openf1.org/v1/drivers?session_key=latest")
+        )
+        pos_res.raise_for_status()
+        drv_res.raise_for_status()
+    
+
+    # Keep only the latest position entry per driver
+    latest = {}
+    for entry in pos_res.json():
+        driver = entry["driver_number"]
+        if driver not in latest or entry["date"] > latest[driver]["date"]:
+            latest[driver] = entry
+
+    # Build a lookup map: driver_number -> driver info
+
+    driver_info = {d["driver_number"]: d for d in drv_res.json()}
+
+    # Merge position + driver info
+    result = []
+    for driver_number, pos in latest.items():
+        info = driver_info.get(driver_number, {})
+        result.append({
+            "position": pos["position"],
+            "driver_number": driver_number,
+            "name_acronym": info.get("name_acronym"),
+            "full_name": info.get("full_name"),
+            "team_name": info.get("team_name"),
+            "team_colour": info.get("team_colour"),
+            "headshot_url": info.get("headshot_url"),
+        })
+
+    return sorted(result, key=lambda x: x["position"])
