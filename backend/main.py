@@ -117,12 +117,20 @@ def live_timing(race_id: int):
 @app.get("/f1/live")
 async def f1_live():
     async with httpx.AsyncClient() as client:
-        pos_res, drv_res = await asyncio.gather(
+        pos_res, drv_res, lap_res, ses_res = await asyncio.gather(
             client.get("https://api.openf1.org/v1/position?session_key=latest"),
-            client.get("https://api.openf1.org/v1/drivers?session_key=latest")
+            client.get("https://api.openf1.org/v1/drivers?session_key=latest"),
+            client.get("https://api.openf1.org/v1/laps?session_key=latest"),
+            client.get("https://api.openf1.org/v1/sessions?session_key=latest")
         )
-        pos_res.raise_for_status()
-        drv_res.raise_for_status()
+        try:
+            pos_res.raise_for_status()
+            drv_res.raise_for_status()
+            lap_res.raise_for_status()
+            ses_res.raise_for_status()
+        except httpx.HTTPStatusError as e:
+            raise HTTPException(status_code=429, detail="OpenF1 rate limit hit, try again shortly")
+
     
 
     # Keep only the latest position entry per driver
@@ -136,10 +144,18 @@ async def f1_live():
 
     driver_info = {d["driver_number"]: d for d in drv_res.json()}
 
-    # Merge position + driver info
+    #Latest Lap per driver (Highest Lap Number)
+    latest_lap = {}
+    for lap in lap_res.json():
+        driver = lap["driver_number"]
+        if driver not in latest_lap or lap["lap_number"] > latest_lap[driver]["lap_number"]:
+            latest_lap[driver] = lap
+
+    # Merge position + driver info + Lap Info
     result = []
     for driver_number, pos in latest.items():
         info = driver_info.get(driver_number, {})
+        lap = latest_lap.get(driver_number, {})
         result.append({
             "position": pos["position"],
             "driver_number": driver_number,
@@ -148,6 +164,20 @@ async def f1_live():
             "team_name": info.get("team_name"),
             "team_colour": info.get("team_colour"),
             "headshot_url": info.get("headshot_url"),
+            "lap_number": lap.get("lap_number"),
+            "last_lap": lap.get("lap_duration"),
         })
 
-    return sorted(result, key=lambda x: x["position"])
+    ses_data = ses_res.json()
+    session = ses_data[0] if isinstance(ses_data, list) and ses_data else ses_data if isinstance(ses_data, dict) else {}
+
+    return {
+        "session": {
+            "name": session.get("session_name"),
+            "circuit": session.get("circuit_short_name"),
+            "country": session.get("country_name"),
+            "year": session.get("year"),
+        },
+        "drivers": sorted(result, key=lambda x: x["position"])
+    }
+
