@@ -7,6 +7,12 @@ import psycopg2.extras
 import httpx
 from fastapi.middleware.cors import CORSMiddleware
 
+import time
+
+_cache = {"data": None, "timestamp": 0}
+CACHE_TTL = 60  # seconds
+
+
 # Create the FastAPI app instance
 app = FastAPI()
 app.add_middleware(
@@ -116,22 +122,23 @@ def live_timing(race_id: int):
 
 @app.get("/f1/live")
 async def f1_live():
-    async with httpx.AsyncClient() as client:
-        pos_res, drv_res, lap_res, ses_res = await asyncio.gather(
-            client.get("https://api.openf1.org/v1/position?session_key=latest"),
-            client.get("https://api.openf1.org/v1/drivers?session_key=latest"),
-            client.get("https://api.openf1.org/v1/laps?session_key=latest"),
-            client.get("https://api.openf1.org/v1/sessions?session_key=latest")
-        )
-        try:
-            pos_res.raise_for_status()
-            drv_res.raise_for_status()
-            lap_res.raise_for_status()
-            ses_res.raise_for_status()
-        except httpx.HTTPStatusError as e:
-            raise HTTPException(status_code=429, detail="OpenF1 rate limit hit, try again shortly")
-
+    now = time.time()
+    if _cache["data"] and (now - _cache["timestamp"]) < CACHE_TTL:
+        return _cache["data"]
     
+    async with httpx.AsyncClient() as client:
+        pos_res = await client.get("https://api.openf1.org/v1/position?session_key=latest")
+        drv_res = await client.get("https://api.openf1.org/v1/drivers?session_key=latest")
+        lap_res = await client.get("https://api.openf1.org/v1/laps?session_key=latest")
+        ses_res = await client.get("https://api.openf1.org/v1/sessions?session_key=latest")
+
+    # Log status codes so we can see which one fails
+    print(f"pos:{pos_res.status_code} drv:{drv_res.status_code} lap:{lap_res.status_code} ses:{ses_res.status_code}")
+
+    for res in [pos_res, drv_res, lap_res, ses_res]:
+        if res.status_code != 200:
+            raise HTTPException(status_code=res.status_code, detail=f"OpenF1 error: {res.status_code} from {res.url}")
+
 
     # Keep only the latest position entry per driver
     latest = {}
@@ -171,7 +178,8 @@ async def f1_live():
     ses_data = ses_res.json()
     session = ses_data[0] if isinstance(ses_data, list) and ses_data else ses_data if isinstance(ses_data, dict) else {}
 
-    return {
+
+    response = {
         "session": {
             "name": session.get("session_name"),
             "circuit": session.get("circuit_short_name"),
@@ -180,4 +188,7 @@ async def f1_live():
         },
         "drivers": sorted(result, key=lambda x: x["position"])
     }
+    _cache["data"] = response
+    _cache["timestamp"] = time.time()
+    return response
 
