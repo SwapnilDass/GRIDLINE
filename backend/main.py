@@ -128,16 +128,26 @@ async def f1_live():
     
     async with httpx.AsyncClient() as client:
         pos_res = await client.get("https://api.openf1.org/v1/position?session_key=latest")
+
         drv_res = await client.get("https://api.openf1.org/v1/drivers?session_key=latest")
+
         lap_res = await client.get("https://api.openf1.org/v1/laps?session_key=latest")
+
         ses_res = await client.get("https://api.openf1.org/v1/sessions?session_key=latest")
+
+        int_res =  await client.get("https://api.openf1.org/v1/intervals?session_key=latest")
+
+
+
 
     # Log status codes so we can see which one fails
     print(f"pos:{pos_res.status_code} drv:{drv_res.status_code} lap:{lap_res.status_code} ses:{ses_res.status_code}")
 
-    for res in [pos_res, drv_res, lap_res, ses_res]:
+    for res in [pos_res, drv_res, lap_res, ses_res, int_res]:
         if res.status_code != 200:
             raise HTTPException(status_code=res.status_code, detail=f"OpenF1 error: {res.status_code} from {res.url}")
+        
+
 
 
     # Keep only the latest position entry per driver
@@ -147,9 +157,11 @@ async def f1_live():
         if driver not in latest or entry["date"] > latest[driver]["date"]:
             latest[driver] = entry
 
-    # Build a lookup map: driver_number -> driver info
 
+
+    # Build a lookup map: driver_number -> driver info
     driver_info = {d["driver_number"]: d for d in drv_res.json()}
+
 
     #Latest Lap per driver (Highest Lap Number)
     latest_lap = {}
@@ -158,11 +170,22 @@ async def f1_live():
         if driver not in latest_lap or lap["lap_number"] > latest_lap[driver]["lap_number"]:
             latest_lap[driver] = lap
 
+
+    #Latest Interval Per driver
+    latest_interval = {}
+    for entry in int_res.json():
+        driver  = entry["driver_number"]
+        if driver not in latest_interval  or entry["date"] > latest_interval[driver]["date"]:
+            latest_interval[driver] = entry
+
+
+
     # Merge position + driver info + Lap Info
     result = []
     for driver_number, pos in latest.items():
         info = driver_info.get(driver_number, {})
         lap = latest_lap.get(driver_number, {})
+        interval = latest_interval.get(driver_number, {})
         result.append({
             "position": pos["position"],
             "driver_number": driver_number,
@@ -173,6 +196,8 @@ async def f1_live():
             "headshot_url": info.get("headshot_url"),
             "lap_number": lap.get("lap_number"),
             "last_lap": lap.get("lap_duration"),
+            "gap_to_leader": interval.get("gap_to_leader"),
+            "interval": interval.get("interval")
         })
 
     ses_data = ses_res.json()
