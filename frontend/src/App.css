@@ -1,42 +1,70 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.timing-board {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
   text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #e10600;
+  margin-bottom: 24px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+thead tr {
+  background-color: #222;
+  color: #999;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+th, td {
+  padding: 12px 24px;
+  text-align: left;
 }
 
-.card {
-  padding: 2em;
+tbody tr {
+  border-bottom: 1px solid #222;
+  transition: background-color 0.2s;
 }
 
-.read-the-docs {
-  color: #888;
+tbody tr:hover {
+  background-color: #1a1a1a;
+}
+
+tbody tr:first-child td:first-child {
+  color: #e10600;
+  font-weight: bold;
+}
+
+.session-info {
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
 }

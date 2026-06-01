@@ -44,6 +44,8 @@ return (
           <th>Team</th>
           <th>LAP</th>
           <th>Last Lap</th>
+          <th>GAP</th>
+          <th>PITS</th>
         </tr>
       </thead>
       <tbody>
@@ -63,6 +65,14 @@ return (
             <td>{d.team_name}</td>
             <td>{d.lap_number ?? "—"}</td>
             <td>{d.last_lap ? d.last_lap.toFixed(3) + "s" : "—"}</td>
+            <td>
+              {d.gap_to_leader != null
+                ? d.gap_to_leader === 0
+                  ? "LEADER"
+                  : `+${d.gap_to_leader}s`
+                : "—"}
+            </td>
+            <td>{d.pit_stops ?? "—"}</td>
           </tr>
         ))}
       </tbody>

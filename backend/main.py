@@ -12,6 +12,9 @@ import time
 _cache = {"data": None, "timestamp": 0}
 CACHE_TTL = 60  # seconds
 
+_session_cache = {"data": None, "timestamp": 0}
+SESSION_CACHE_TTL = 3600  # 1 hour
+
 
 # Create the FastAPI app instance
 app = FastAPI()
@@ -133,17 +136,34 @@ async def f1_live():
 
         lap_res = await client.get("https://api.openf1.org/v1/laps?session_key=latest")
 
-        ses_res = await client.get("https://api.openf1.org/v1/sessions?session_key=latest")
+
+
+        now_ses = time.time()
+        if _session_cache["data"] and (now_ses - _session_cache["timestamp"]) < SESSION_CACHE_TTL:
+            ses_data = _session_cache["data"]
+        else:
+            ses_res = await client.get("https://api.openf1.org/v1/sessions?session_key=latest")
+            if ses_res.status_code == 200:
+                ses_data = ses_res.json()
+                _session_cache["data"] = ses_data
+                _session_cache["timestamp"] = time.time()
+            else:
+                ses_data = _session_cache["data"] or []
+
+
 
         int_res =  await client.get("https://api.openf1.org/v1/intervals?session_key=latest")
+
+        pit_res = await client.get("https://api.openf1.org/v1/pit?session_key=latest")
 
 
 
 
     # Log status codes so we can see which one fails
-    print(f"pos:{pos_res.status_code} drv:{drv_res.status_code} lap:{lap_res.status_code} ses:{ses_res.status_code}")
+    print(f"pos:{pos_res.status_code} drv:{drv_res.status_code} lap:{lap_res.status_code}")
 
-    for res in [pos_res, drv_res, lap_res, ses_res, int_res]:
+
+    for res in [pos_res, drv_res, lap_res, int_res, pit_res]:
         if res.status_code != 200:
             raise HTTPException(status_code=res.status_code, detail=f"OpenF1 error: {res.status_code} from {res.url}")
         
@@ -179,6 +199,13 @@ async def f1_live():
             latest_interval[driver] = entry
 
 
+    #Pit stops
+    pit_stops = {}
+    for entry in pit_res.json():
+        driver = entry["driver_number"]
+        pit_stops[driver] = pit_stops.get(driver, 0) + 1
+
+
 
     # Merge position + driver info + Lap Info
     result = []
@@ -197,11 +224,12 @@ async def f1_live():
             "lap_number": lap.get("lap_number"),
             "last_lap": lap.get("lap_duration"),
             "gap_to_leader": interval.get("gap_to_leader"),
-            "interval": interval.get("interval")
+            "interval": interval.get("interval"),
+            "pit_stops": pit_stops.get(driver_number, 0)
         })
 
-    ses_data = ses_res.json()
-    session = ses_data[0] if isinstance(ses_data, list) and ses_data else ses_data if isinstance(ses_data, dict) else {}
+    
+        session = ses_data[0] if isinstance(ses_data, list) and ses_data else ses_data if isinstance(ses_data, dict) else {}
 
 
     response = {
