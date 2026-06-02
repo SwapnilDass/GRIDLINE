@@ -11,9 +11,17 @@ body {
 }
 
 .timing-board {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
 h1 {
@@ -22,39 +30,19 @@ h1 {
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #e10600;
-  margin-bottom: 24px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-thead tr {
-  background-color: #222;
-  color: #999;
+.live-badge {
+  color: #e10600;
   font-size: 0.75rem;
   letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-th, td {
-  padding: 12px 24px;
-  text-align: left;
-}
-
-tbody tr {
-  border-bottom: 1px solid #222;
-  transition: background-color 0.2s;
-}
-
-tbody tr:hover {
-  background-color: #1a1a1a;
-}
-
-tbody tr:first-child td:first-child {
-  color: #e10600;
   font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
 }
 
 .session-info {
@@ -67,4 +55,79 @@ tbody tr:first-child td:first-child {
   margin-bottom: 16px;
   padding: 8px 0;
   border-bottom: 1px solid #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr {
+  background-color: #1a1a1a;
+  color: #666;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+th, td {
+  padding: 10px 16px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #1e1e1e;
+  transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+  background-color: #1a1a1a;
+}
+
+.pos {
+  font-weight: bold;
+  font-size: 1rem;
+  width: 40px;
+  text-align: center;
+}
+
+.pos-1 { color: #FFD700; }
+.pos-2 { color: #C0C0C0; }
+.pos-3 { color: #CD7F32; }
+
+.driver-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.driver-cell img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #222;
+}
+
+.driver-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.acronym {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.full-name {
+  font-size: 0.7rem;
+  color: #888;
+}
+
+.team-bar {
+  display: inline-block;
+  width: 4px;
+  height: 36px;
+  border-radius: 2px;
+  margin-right: 8px;
 }

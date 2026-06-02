@@ -25,6 +25,7 @@ function App() {
 return (
   <div className="timing-board">
     <h1>F1 Live Timing</h1>
+    <span className="live-badge">⬤ LIVE</span>
 
     {session && (
       <div className="session-info">
@@ -51,16 +52,21 @@ return (
       <tbody>
         {drivers.map((d) => (
           <tr key={d.driver_number}>
-            <td>{d.position}</td>
             <td>
-              <span
-                style={{
-                  borderLeft: `4px solid #${d.team_colour}`,
-                  paddingLeft: "8px",
-                }}
-              >
-                {d.name_acronym} — {d.full_name}
-              </span>
+              <span className={`pos pos-${d.position}`}>{d.position}</span>
+            </td>
+            <td>
+              <div className="driver-cell">
+                <span
+                  className="team-bar"
+                  style={{ backgroundColor: `#${d.team_colour}` }}
+                />
+                <img src={d.headshot_url} alt={d.name_acronym} />
+                <div className="driver-name">
+                  <span className="acronym">{d.name_acronym}</span>
+                  <span className="full-name">{d.full_name}</span>
+                </div>
+              </div>
             </td>
             <td>{d.team_name}</td>
             <td>{d.lap_number ?? "—"}</td>
@@ -82,3 +88,4 @@ return (
 }
 
 export default App;
+
