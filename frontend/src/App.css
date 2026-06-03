@@ -11,10 +11,12 @@ body {
 }
 
 .timing-board {
-  max-width: 1100px;
+  width: 95%;
+  max-width: 1400px;
   margin: 40px auto;
   padding: 20px;
 }
+
 
 .header {
   display: flex;
@@ -130,4 +132,7 @@ tbody tr:hover {
   height: 36px;
   border-radius: 2px;
   margin-right: 8px;
+}
+tbody tr:nth-child(even) {
+  background-color: #161616;
 }
