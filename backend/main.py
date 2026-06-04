@@ -156,19 +156,17 @@ async def f1_live():
 
         pit_res = await client.get("https://api.openf1.org/v1/pit?session_key=latest")
 
-
+        stint_res = await client.get("https://api.openf1.org/v1/stints?session_key=latest")
 
 
     # Log status codes so we can see which one fails
     print(f"pos:{pos_res.status_code} drv:{drv_res.status_code} lap:{lap_res.status_code}")
 
 
-    for res in [pos_res, drv_res, lap_res, int_res, pit_res]:
+    for res in [pos_res, drv_res, lap_res, int_res, pit_res, stint_res]:
         if res.status_code != 200:
             raise HTTPException(status_code=res.status_code, detail=f"OpenF1 error: {res.status_code} from {res.url}")
         
-
-
 
     # Keep only the latest position entry per driver
     latest = {}
@@ -190,6 +188,13 @@ async def f1_live():
         if driver not in latest_lap or lap["lap_number"] > latest_lap[driver]["lap_number"]:
             latest_lap[driver] = lap
 
+    best_lap = {}
+    for lap in lap_res.json():
+        driver = lap["driver_number"]
+        duration = lap.get("lap_duration")
+        if duration and (driver not in best_lap or duration < best_lap[driver]):
+            best_lap[driver] = duration
+
 
     #Latest Interval Per driver
     latest_interval = {}
@@ -206,6 +211,13 @@ async def f1_live():
         pit_stops[driver] = pit_stops.get(driver, 0) + 1
 
 
+    # Current tyre compound per driver (highest stint_number = current stint)
+    current_tyre = {}
+    for entry in stint_res.json():
+        driver = entry["driver_number"]
+        if driver not in current_tyre or entry["stint_number"] > current_tyre[driver]["stint_number"]:
+            current_tyre[driver] = entry
+
 
     # Merge position + driver info + Lap Info
     result = []
@@ -213,6 +225,7 @@ async def f1_live():
         info = driver_info.get(driver_number, {})
         lap = latest_lap.get(driver_number, {})
         interval = latest_interval.get(driver_number, {})
+        tyre = current_tyre.get(driver_number, {})
         result.append({
             "position": pos["position"],
             "driver_number": driver_number,
@@ -223,9 +236,11 @@ async def f1_live():
             "headshot_url": info.get("headshot_url"),
             "lap_number": lap.get("lap_number"),
             "last_lap": lap.get("lap_duration"),
+            "best_lap": best_lap.get(driver_number),
             "gap_to_leader": interval.get("gap_to_leader"),
             "interval": interval.get("interval"),
-            "pit_stops": pit_stops.get(driver_number, 0)
+            "pit_stops": pit_stops.get(driver_number, 0),
+            "compound": tyre.get("compound")
         })
 
     

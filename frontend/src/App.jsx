@@ -45,8 +45,10 @@ return (
           <th>Team</th>
           <th>LAP</th>
           <th>Last Lap</th>
+          <th>BEST LAP</th>
           <th>GAP</th>
           <th>PITS</th>
+          <th>TYRE</th>
         </tr>
       </thead>
       <tbody>
@@ -71,6 +73,9 @@ return (
             <td>{d.team_name}</td>
             <td>{d.lap_number ?? "—"}</td>
             <td>{d.last_lap ? d.last_lap.toFixed(3) + "s" : "—"}</td>
+            <td style={{ color: d.best_lap ? "#00d2be" : "inherit" }}>
+              {d.best_lap ? d.best_lap.toFixed(3) + "s" : "—"}
+            </td>
             <td>
               {d.gap_to_leader != null
                 ? d.gap_to_leader === 0
@@ -79,6 +84,31 @@ return (
                 : "—"}
             </td>
             <td>{d.pit_stops ?? "—"}</td>
+            <td>
+              <span
+                style={{
+                  backgroundColor:
+                    d.compound === "SOFT"
+                      ? "#e10600"
+                      : d.compound === "MEDIUM"
+                        ? "#ffd700"
+                        : d.compound === "HARD"
+                          ? "#fff"
+                          : "#444",
+                  color:
+                    d.compound === "HARD" || d.compound === "MEDIUM"
+                      ? "#111"
+                      : "#fff",
+                  padding: "2px 8px",
+                  borderRadius: "4px",
+                  fontSize: "0.75rem",
+                  fontWeight: "bold",
+                  letterSpacing: "1px",
+                }}
+              >
+                {d.compound ?? "—"}
+              </span>
+            </td>
           </tr>
         ))}
       </tbody>
