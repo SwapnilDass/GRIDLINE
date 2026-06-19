@@ -2,26 +2,37 @@
 # Run manually from the Airflow UI — not scheduled.
 
 
-
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
 import pandas as pd
 import psycopg2
 
-DB_URL = "postgresql://gridline:gridline@host.docker.internal:5432/gridline_db"
+
+DB_URL = "postgresql://gridline:gridline@host.docker.internal:5433/gridline_db"
+
+
 
 def load_drivers():
     conn = psycopg2.connect(DB_URL)
     cur = conn.cursor()
-    df = pd.read_csv("/opt/airflow/dataset/drivers.csv")
+    df = pd.read_csv("/opt/airflow/dataset/drivers.csv", na_values=["\\N"])
+
     for _, row in df.iterrows():
         cur.execute("""
             INSERT INTO drivers (driver_id, driver_ref, permanent_number, code, forename, surname, dob, nationality)
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
             ON CONFLICT (driver_id) DO NOTHING
-        """, (row.driverId, row.driverRef, row.get("number"), row.get("code"),
-              row.forename, row.surname, row.get("dob"), row.nationality))
+        """, (
+            row.driverId,
+            row.driverRef,
+            None if pd.isna(row.get("number")) else int(float(row.get("number"))),
+            None if pd.isna(row.get("code")) else row.get("code"),
+            row.forename,
+            row.surname,
+            None if pd.isna(row.get("dob")) else row.get("dob"),
+            row.nationality
+        ))
     conn.commit()
     cur.close()
     conn.close()
