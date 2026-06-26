@@ -6,13 +6,18 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [session, setSession] = useState(null)
 
-  const fetchData = async () => {
+const fetchData = async () => {
+  try {
     const res = await fetch("http://localhost:8000/f1/live");
+    if (!res.ok) return;
     const data = await res.json();
     setDrivers(data.drivers);
     setSession(data.session);
     setLoading(false);
-  };
+  } catch (e) {
+    console.error("Fetch failed:", e);
+  }
+};
 
   useEffect(() => {
     fetchData();

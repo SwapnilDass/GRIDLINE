@@ -20,7 +20,7 @@ SESSION_CACHE_TTL = 3600  # 1 hour
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173", "http://localhost:5174"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -163,10 +163,13 @@ async def f1_live():
     print(f"pos:{pos_res.status_code} drv:{drv_res.status_code} lap:{lap_res.status_code}")
 
 
-    for res in [pos_res, drv_res, lap_res, int_res, pit_res, stint_res]:
+    for res in [pos_res, drv_res, lap_res]:
         if res.status_code != 200:
             raise HTTPException(status_code=res.status_code, detail=f"OpenF1 error: {res.status_code} from {res.url}")
-        
+
+    int_data = int_res.json() if int_res.status_code == 200 else []
+    pit_data = pit_res.json() if pit_res.status_code == 200 else []
+    stint_data = stint_res.json() if stint_res.status_code == 200 else []
 
     # Keep only the latest position entry per driver
     latest = {}
@@ -175,11 +178,8 @@ async def f1_live():
         if driver not in latest or entry["date"] > latest[driver]["date"]:
             latest[driver] = entry
 
-
-
     # Build a lookup map: driver_number -> driver info
     driver_info = {d["driver_number"]: d for d in drv_res.json()}
-
 
     #Latest Lap per driver (Highest Lap Number)
     latest_lap = {}
@@ -195,25 +195,22 @@ async def f1_live():
         if duration and (driver not in best_lap or duration < best_lap[driver]):
             best_lap[driver] = duration
 
-
     #Latest Interval Per driver
     latest_interval = {}
-    for entry in int_res.json():
-        driver  = entry["driver_number"]
-        if driver not in latest_interval  or entry["date"] > latest_interval[driver]["date"]:
+    for entry in int_data:
+        driver = entry["driver_number"]
+        if driver not in latest_interval or entry["date"] > latest_interval[driver]["date"]:
             latest_interval[driver] = entry
-
 
     #Pit stops
     pit_stops = {}
-    for entry in pit_res.json():
+    for entry in pit_data:
         driver = entry["driver_number"]
         pit_stops[driver] = pit_stops.get(driver, 0) + 1
 
-
     # Current tyre compound per driver (highest stint_number = current stint)
     current_tyre = {}
-    for entry in stint_res.json():
+    for entry in stint_data:
         driver = entry["driver_number"]
         if driver not in current_tyre or entry["stint_number"] > current_tyre[driver]["stint_number"]:
             current_tyre[driver] = entry
