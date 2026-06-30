@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   airflow:
-    image: apache/airflow:2.9.1
+    build: .
     restart: always
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
@@ -17,6 +17,7 @@ services:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
+      - ./requirements.txt:/requirements.txt
       - ../Dataset:/opt/airflow/dataset
     ports:
       - "8080:8080"

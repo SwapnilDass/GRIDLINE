@@ -1,0 +1,43 @@
+[2026-06-30T17:19:03.385+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-30T17:19:03.704+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: lap_time_analysis.run_lap_analysis manual__2026-06-30T17:18:52.880398+00:00 [queued]>
+[2026-06-30T17:19:03.773+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: lap_time_analysis.run_lap_analysis manual__2026-06-30T17:18:52.880398+00:00 [queued]>
+[2026-06-30T17:19:03.775+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-06-30T17:19:03.893+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): run_lap_analysis> on 2026-06-30 17:18:52.880398+00:00
+[2026-06-30T17:19:04.096+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'lap_time_analysis', 'run_lap_analysis', 'manual__2026-06-30T17:18:52.880398+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/lap_time_analysis.py', '--cfg-path', '/tmp/tmpe3ez3ldf']
+[2026-06-30T17:19:04.143+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=360) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2026-06-30T17:19:04.165+0000] {standard_task_runner.py:91} INFO - Job 26: Subtask run_lap_analysis
+[2026-06-30T17:19:04.166+0000] {standard_task_runner.py:63} INFO - Started process 361 to run task
+[2026-06-30T17:19:05.191+0000] {task_command.py:426} INFO - Running <TaskInstance: lap_time_analysis.run_lap_analysis manual__2026-06-30T17:18:52.880398+00:00 [running]> on host b862e77a116a
+[2026-06-30T17:19:05.890+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='lap_time_analysis' AIRFLOW_CTX_TASK_ID='run_lap_analysis' AIRFLOW_CTX_EXECUTION_DATE='2026-06-30T17:18:52.880398+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-30T17:18:52.880398+00:00'
+[2026-06-30T17:19:05.894+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-30T17:20:30.370+0000] {logging_mixin.py:188} INFO - +------+--------+--------------+----------+
+|raceId|driverId|fastest_lap_ms|avg_lap_ms|
++------+--------+--------------+----------+
+|     1|       3|         87706|  97612.17|
+|     1|       9|         87988|  95160.69|
+|     1|      18|         88020|  97513.52|
+|     1|      20|         88140|  96325.45|
+|     1|       2|         88283|  97635.67|
+|     1|      10|         88416|  97589.98|
+|     1|       8|         88488|   97078.2|
+|     1|      17|         88508|  99231.53|
+|     1|       4|         88712|  97597.64|
+|     1|      15|         88916|  97541.17|
+|     1|      16|         88943|  97622.74|
+|     1|      21|         89005|  97640.66|
+|     1|       1|         89020|  97563.76|
+|     1|      22|         89066|  97527.43|
+|     1|      13|         89141|  97002.36|
+|     1|      67|         89230|  97617.03|
+|     1|       7|         89823|   97622.1|
+|     1|       6|         89923|  91822.24|
+|     1|      12|         90502| 101765.58|
+|     2|      18|         96641| 107439.42|
++------+--------+--------------+----------+
+only showing top 20 rows
+[2026-06-30T17:20:30.970+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-06-30T17:20:31.044+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-06-30T17:20:31.448+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=lap_time_analysis, task_id=run_lap_analysis, run_id=manual__2026-06-30T17:18:52.880398+00:00, execution_date=20260630T171852, start_date=20260630T171903, end_date=20260630T172031
+[2026-06-30T17:20:31.705+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-06-30T17:20:31.924+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-06-30T17:20:31.927+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
