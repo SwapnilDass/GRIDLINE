@@ -1,3 +1,7 @@
+from dotenv import load_dotenv
+load_dotenv()
+
+
 import asyncio
 
 from fastapi import FastAPI, HTTPException
@@ -256,6 +260,25 @@ async def f1_live():
     _cache["data"] = response
     _cache["timestamp"] = time.time()
     return response
+
+@app.get("/ergast/drivers")
+def ergast_drivers():
+    try:
+        with get_conn() as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute("""
+                    SELECT driver_id, forename, surname, code, nationality, dob
+                    FROM drivers
+                    ORDER BY surname ASC
+                """)
+                rows = cur.fetchall()
+    except RuntimeError as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"DB error: {e}")
+
+    return {"drivers": [dict(r) for r in rows]}
+
 
 #pushed
 #pushed
