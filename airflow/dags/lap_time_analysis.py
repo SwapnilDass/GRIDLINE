@@ -28,8 +28,24 @@ def run_lap_analysis():
         ) \
         .orderBy("raceId", "fastest_lap_ms")
 
-    result.show(20)
+    rows = result.collect()
+
+    import psycopg2
+    conn = psycopg2.connect("postgresql://gridline:gridline@host.docker.internal:5433/gridline_db")
+    cur = conn.cursor()
+
+    for row in rows:
+        cur.execute("""
+            INSERT INTO lap_analysis (race_id, driver_id, fastest_lap_ms, avg_lap_ms)
+            VALUES (%s, %s, %s, %s)
+            ON CONFLICT (race_id, driver_id) DO NOTHING
+        """, (row.raceId, row.driverId, row.fastest_lap_ms, row.avg_lap_ms))
+
+    conn.commit()
+    cur.close()
+    conn.close()
     spark.stop()
+
 
 with DAG(
     dag_id="lap_time_analysis",

@@ -279,6 +279,24 @@ def ergast_drivers():
 
     return {"drivers": [dict(r) for r in rows]}
 
+@app.get("/ergast/lap-analysis")
+def lap_analysis():
+    try:
+        with get_conn() as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute("""
+                    SELECT race_id, driver_id, fastest_lap_ms, avg_lap_ms
+                    FROM lap_analysis
+                    ORDER BY race_id, fastest_lap_ms
+                """)
+                rows = cur.fetchall()
+    except RuntimeError as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"DB error: {e}")
+
+    return {"results": [dict(r) for r in rows]}
+
 
 #pushed
 #pushed
