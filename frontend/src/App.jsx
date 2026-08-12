@@ -30,13 +30,13 @@ const fetchErgastDrivers = async () => {
 };
 
 const fetchLapAnalysis = async () => {
-  const res = await fetch("http://localhost:8002/ergast/lap-analysis");
+  const res = await fetch("http://localhost:8001/ergast/lap-analysis");
   const data = await res.json();
   setLapAnalysis(data.results);
 };
 
 const fetchConstructorStandings = async () => {
-  const res = await fetch("http://localhost:8002/ergast/constructor-standings");
+  const res = await fetch("http://localhost:8001/ergast/constructor-standings");
   const data = await res.json();
   setConstructorStandings(data.results);
 };
