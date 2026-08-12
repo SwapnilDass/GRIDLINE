@@ -298,5 +298,29 @@ def lap_analysis():
     return {"results": [dict(r) for r in rows]}
 
 
+@app.get("/ergast/constructor-standings")
+def constructor_standings():
+    try:
+        with get_conn() as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute("""
+                    SELECT constructor_id, name, total_points, total_wins
+                    FROM constructor_standings
+                    ORDER BY total_points DESC
+                """)
+                rows = cur.fetchall()
+    except RuntimeError as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"DB error: {e}")
+
+    return {"results": [dict(r) for r in rows]}
+
+
+
+
+
+
+
 #pushed
 #pushed

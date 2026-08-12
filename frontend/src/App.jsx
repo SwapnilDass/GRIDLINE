@@ -8,6 +8,8 @@ function App() {
   const [view, setView] = useState("live");
   const [ergastDrivers, setErgastDrivers] = useState([]);
   const [lapAnalysis, setLapAnalysis] = useState([]);
+  const [constructorStandings, setConstructorStandings] = useState([]);
+
 
 const fetchData = async () => {
   try {
@@ -31,6 +33,12 @@ const fetchLapAnalysis = async () => {
   const res = await fetch("http://localhost:8002/ergast/lap-analysis");
   const data = await res.json();
   setLapAnalysis(data.results);
+};
+
+const fetchConstructorStandings = async () => {
+  const res = await fetch("http://localhost:8002/ergast/constructor-standings");
+  const data = await res.json();
+  setConstructorStandings(data.results);
 };
 
 
@@ -63,6 +71,15 @@ return (
       }}
     >
       Lap Analysis
+    </button>
+
+    <button
+      onClick={() => {
+        setView("constructor-standings");
+        fetchConstructorStandings();
+      }}
+    >
+      Constructor Standings
     </button>
 
     {session && (
@@ -194,6 +211,27 @@ return (
               <td>{r.driver_id}</td>
               <td>{r.fastest_lap_ms}</td>
               <td>{r.avg_lap_ms}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+
+    {view === "constructor-standings" && (
+      <table>
+        <thead>
+          <tr>
+            <th>Team</th>
+            <th>Total Points</th>
+            <th>Total Wins</th>
+          </tr>
+        </thead>
+        <tbody>
+          {constructorStandings.map((r) => (
+            <tr key={r.constructor_id}>
+              <td>{r.name}</td>
+              <td>{r.total_points}</td>
+              <td>{r.total_wins}</td>
             </tr>
           ))}
         </tbody>

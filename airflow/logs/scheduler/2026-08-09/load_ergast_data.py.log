@@ -822,3 +822,31 @@
 [2026-08-09T14:34:39.393+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:34:39.393+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-08-09T14:34:39.406+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:34:39.406+0000] {dag.py:3954} INFO - Setting next_dagrun for load_ergast_data to None, run_after=None
 [2026-08-09T14:34:39.426+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_ergast_data.py took 0.387 seconds
+[2026-08-09T14:35:12.035+0000] {processor.py:161} INFO - Started process (PID=1507) to work on /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:35:12.039+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_ergast_data.py for tasks to queue
+[2026-08-09T14:35:12.042+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:35:12.041+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:35:12.628+0000] {processor.py:840} INFO - DAG(s) 'load_ergast_data' retrieved from /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:35:12.674+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:35:12.673+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-09T14:35:12.714+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:35:12.713+0000] {dag.py:3954} INFO - Setting next_dagrun for load_ergast_data to None, run_after=None
+[2026-08-09T14:35:12.758+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_ergast_data.py took 0.749 seconds
+[2026-08-09T14:35:44.501+0000] {processor.py:161} INFO - Started process (PID=1517) to work on /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:35:44.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_ergast_data.py for tasks to queue
+[2026-08-09T14:35:44.519+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:35:44.517+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:35:47.162+0000] {processor.py:840} INFO - DAG(s) 'load_ergast_data' retrieved from /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:35:47.213+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:35:47.213+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-09T14:35:50.678+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:35:50.678+0000] {dag.py:3954} INFO - Setting next_dagrun for load_ergast_data to None, run_after=None
+[2026-08-09T14:35:50.773+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_ergast_data.py took 6.303 seconds
+[2026-08-09T14:36:21.483+0000] {processor.py:161} INFO - Started process (PID=1531) to work on /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:36:21.487+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_ergast_data.py for tasks to queue
+[2026-08-09T14:36:21.490+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:36:21.489+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:36:25.371+0000] {processor.py:840} INFO - DAG(s) 'load_ergast_data' retrieved from /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:36:26.917+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:36:26.916+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-09T14:36:26.936+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:36:26.936+0000] {dag.py:3954} INFO - Setting next_dagrun for load_ergast_data to None, run_after=None
+[2026-08-09T14:36:26.961+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_ergast_data.py took 5.531 seconds
+[2026-08-09T14:36:52.383+0000] {processor.py:161} INFO - Started process (PID=1542) to work on /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:36:52.391+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/load_ergast_data.py for tasks to queue
+[2026-08-09T14:36:52.394+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:36:52.394+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:36:52.895+0000] {processor.py:840} INFO - DAG(s) 'load_ergast_data' retrieved from /opt/airflow/dags/load_ergast_data.py
+[2026-08-09T14:36:55.115+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:36:55.112+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-09T14:36:55.175+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:36:55.175+0000] {dag.py:3954} INFO - Setting next_dagrun for load_ergast_data to None, run_after=None
+[2026-08-09T14:36:55.245+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/load_ergast_data.py took 2.877 seconds

@@ -1,0 +1,105 @@
+[2026-08-12T03:55:15.738+0000] {processor.py:161} INFO - Started process (PID=4126) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:55:15.764+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T03:55:15.895+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:55:15.873+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:55:26.904+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:55:29.421+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:55:29.391+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T03:55:30.435+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:55:30.434+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T03:55:31.416+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 16.654 seconds
+[2026-08-12T03:56:02.877+0000] {processor.py:161} INFO - Started process (PID=4142) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:56:02.882+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T03:56:02.890+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:56:02.886+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:56:03.642+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:56:03.743+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:56:03.743+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T03:56:03.808+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:56:03.807+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T03:56:03.864+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 1.074 seconds
+[2026-08-12T03:56:34.496+0000] {processor.py:161} INFO - Started process (PID=4158) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:56:34.514+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T03:56:34.522+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:56:34.519+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:56:35.349+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:56:35.444+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:56:35.443+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T03:56:35.501+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:56:35.501+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T03:56:35.554+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 1.118 seconds
+[2026-08-12T03:57:15.960+0000] {processor.py:161} INFO - Started process (PID=4172) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:57:15.970+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T03:57:15.990+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:57:15.987+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:57:17.466+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:57:17.754+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:57:17.753+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T03:57:17.851+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:57:17.851+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T03:57:17.990+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 2.160 seconds
+[2026-08-12T03:57:49.540+0000] {processor.py:161} INFO - Started process (PID=4184) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:57:49.549+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T03:57:49.553+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:57:49.552+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:57:49.792+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:57:49.872+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:57:49.872+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T03:57:49.900+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:57:49.900+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T03:57:49.943+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 0.430 seconds
+[2026-08-12T03:58:22.713+0000] {processor.py:161} INFO - Started process (PID=4200) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:58:22.715+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T03:58:22.718+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:58:22.717+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:58:22.966+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:58:23.008+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:58:23.008+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T03:58:23.030+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:58:23.029+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T03:58:23.063+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 0.363 seconds
+[2026-08-12T03:58:59.892+0000] {processor.py:161} INFO - Started process (PID=4213) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:59:00.026+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T03:59:00.065+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:59:00.049+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:59:08.624+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:59:09.394+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:59:09.393+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T03:59:09.481+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:59:09.479+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T03:59:09.635+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 9.845 seconds
+[2026-08-12T03:59:40.108+0000] {processor.py:161} INFO - Started process (PID=4226) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:59:40.111+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T03:59:40.115+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:59:40.114+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:59:40.342+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T03:59:40.387+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:59:40.387+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T03:59:40.405+0000] {logging_mixin.py:188} INFO - [2026-08-12T03:59:40.405+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T03:59:40.441+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 0.347 seconds
+[2026-08-12T04:00:11.238+0000] {processor.py:161} INFO - Started process (PID=4242) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:00:11.450+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T04:00:11.632+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:00:11.543+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:00:12.869+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:00:12.919+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:00:12.919+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T04:00:12.942+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:00:12.942+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T04:00:12.977+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 2.240 seconds
+[2026-08-12T04:00:43.196+0000] {processor.py:161} INFO - Started process (PID=4258) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:00:43.223+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T04:00:43.247+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:00:43.237+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:00:46.952+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:00:47.971+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:00:47.970+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T04:00:48.074+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:00:48.073+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T04:00:48.144+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 4.972 seconds
+[2026-08-12T04:01:18.387+0000] {processor.py:161} INFO - Started process (PID=4277) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:01:18.391+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T04:01:18.394+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:01:18.393+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:01:18.645+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:01:18.901+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:01:18.900+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T04:01:18.996+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:01:18.995+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T04:01:19.054+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 0.683 seconds
+[2026-08-12T04:01:49.834+0000] {processor.py:161} INFO - Started process (PID=4290) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:01:49.840+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T04:01:49.845+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:01:49.843+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:01:50.100+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:01:50.145+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:01:50.145+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T04:01:50.186+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:01:50.186+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T04:01:50.306+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 0.516 seconds
+[2026-08-12T04:02:20.908+0000] {processor.py:161} INFO - Started process (PID=4306) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:02:20.912+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T04:02:20.915+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:02:20.915+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:02:21.201+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:02:21.263+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:02:21.263+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T04:02:21.290+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:02:21.290+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T04:02:21.330+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 0.446 seconds
+[2026-08-12T04:02:50.101+0000] {processor.py:161} INFO - Started process (PID=4322) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:02:50.104+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T04:02:50.107+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:02:50.106+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:02:50.745+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:02:50.842+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:02:50.841+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T04:02:50.880+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:02:50.880+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T04:02:50.933+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 0.851 seconds
+[2026-08-12T04:03:21.243+0000] {processor.py:161} INFO - Started process (PID=4336) to work on /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:03:21.262+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/constructor_standings.py for tasks to queue
+[2026-08-12T04:03:21.271+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:03:21.267+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:03:22.325+0000] {processor.py:840} INFO - DAG(s) 'constructor_standings' retrieved from /opt/airflow/dags/constructor_standings.py
+[2026-08-12T04:03:24.255+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:03:24.254+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-12T04:03:24.335+0000] {logging_mixin.py:188} INFO - [2026-08-12T04:03:24.335+0000] {dag.py:3954} INFO - Setting next_dagrun for constructor_standings to None, run_after=None
+[2026-08-12T04:03:24.404+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/constructor_standings.py took 4.673 seconds
