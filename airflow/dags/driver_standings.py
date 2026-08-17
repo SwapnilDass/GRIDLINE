@@ -21,6 +21,19 @@ def run_driver_standings():
     )
 
 
-    result = standings.groupBy("driverID")
+    result = standings.groupBy("driverId").agg(
+        sum("points").alias("total_points"),
+        sum("wins").alias("total_wins")
+    ).join(
+        drivers.select("driverId", "forename", "surname"
+        ),
+        on = "driverId"
+    ).orderBy(col("total_points").desc()).limit(15)
+
+    rows = result.collect()
+
+    import psycopg2
+    conn = psycopg2.connect("postgresql://gridline:gridline@host.docker.internal:5433/gridline_db")
+    cur = conn.cursor()
 
     
