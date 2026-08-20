@@ -317,6 +317,28 @@ def constructor_standings():
     return {"results": [dict(r) for r in rows]}
 
 
+@app.get("/ergast/driver-standings")
+def driver_standings():
+    try:
+        with get_conn() as conn:
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+                cur.execute("""
+                    SELECT driver_id, forename, surname, total_points, total_wins
+                    FROM driver_standings
+                    ORDER BY total_points DESC
+                """)
+                rows = cur.fetchall()
+    except RuntimeError as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"DB error: {e}")
+
+    return {"results": [dict(r) for r in rows]}
+
+
+
+
+
 
 
 

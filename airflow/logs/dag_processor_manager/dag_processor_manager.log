@@ -12683,3 +12683,355 @@ File Path                                   PID    Runtime      # DAGs    # Erro
 /opt/airflow/dags/lap_time_analysis.py                               1           0  0.28s           2026-08-12T11:32:05
 /opt/airflow/dags/constructor_standings.py                           1           0  0.22s           2026-08-12T11:31:45
 ================================================================================
+[2026-08-20T16:04:49.519+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2026-08-20T16:04:49.630+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2026-08-20T16:04:49.638+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-08-20T16:04:49.656+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-20T16:04:50.651+0000] {manager.py:740} INFO - There are 4 files in /opt/airflow/dags
+[2026-08-20T16:04:52.805+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/constructor_standings.py    251  0.88s             0           0
+/opt/airflow/dags/driver_standings.py         248  1.07s             0           0
+/opt/airflow/dags/lap_time_analysis.py                               0           0
+/opt/airflow/dags/load_ergast_data.py                                0           0
+================================================================================
+[2026-08-20T16:05:24.145+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/driver_standings.py                                1           0  3.86s           2026-08-20T16:04:55
+/opt/airflow/dags/constructor_standings.py                           1           0  3.61s           2026-08-20T16:04:55
+/opt/airflow/dags/load_ergast_data.py                                1           0  2.54s           2026-08-20T16:04:58
+/opt/airflow/dags/lap_time_analysis.py                               1           0  1.06s           2026-08-20T16:04:57
+================================================================================
+[2026-08-20T16:05:55.009+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  3.92s           2026-08-20T16:05:32
+/opt/airflow/dags/driver_standings.py                                1           0  1.98s           2026-08-20T16:05:28
+/opt/airflow/dags/constructor_standings.py                           1           0  1.67s           2026-08-20T16:05:28
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.36s           2026-08-20T16:05:28
+================================================================================
+[2026-08-20T16:06:26.048+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/driver_standings.py                                1           0  8.46s           2026-08-20T16:06:06
+/opt/airflow/dags/constructor_standings.py                           1           0  8.05s           2026-08-20T16:06:06
+/opt/airflow/dags/load_ergast_data.py                                1           0  3.87s           2026-08-20T16:06:11
+/opt/airflow/dags/lap_time_analysis.py                               1           0  1.14s           2026-08-20T16:06:08
+================================================================================
+[2026-08-20T16:06:57.080+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  4.41s           2026-08-20T16:06:45
+/opt/airflow/dags/driver_standings.py                                1           0  3.37s           2026-08-20T16:06:40
+/opt/airflow/dags/constructor_standings.py                           1           0  1.05s           2026-08-20T16:06:40
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.34s           2026-08-20T16:06:40
+================================================================================
+[2026-08-20T16:07:28.210+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/driver_standings.py                                1           0  6.59s           2026-08-20T16:07:17
+/opt/airflow/dags/constructor_standings.py                           1           0  6.48s           2026-08-20T16:07:17
+/opt/airflow/dags/load_ergast_data.py         531  9.73s             1           0  4.41s           2026-08-20T16:06:45
+/opt/airflow/dags/lap_time_analysis.py                               1           0  2.33s           2026-08-20T16:07:19
+================================================================================
+[2026-08-20T16:07:59.515+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  25.05s          2026-08-20T16:07:43
+/opt/airflow/dags/constructor_standings.py                           1           0  4.08s           2026-08-20T16:07:51
+/opt/airflow/dags/driver_standings.py                                1           0  3.16s           2026-08-20T16:07:50
+/opt/airflow/dags/lap_time_analysis.py                               1           0  1.66s           2026-08-20T16:07:52
+================================================================================
+[2026-08-20T16:08:31.250+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  7.26s           2026-08-20T16:08:20
+/opt/airflow/dags/constructor_standings.py                           1           0  2.16s           2026-08-20T16:08:24
+/opt/airflow/dags/lap_time_analysis.py                               1           0  2.03s           2026-08-20T16:08:25
+/opt/airflow/dags/driver_standings.py                                1           0  0.61s           2026-08-20T16:08:21
+================================================================================
+[2026-08-20T16:09:02.551+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/lap_time_analysis.py                               1           0  1.57s           2026-08-20T16:08:57
+/opt/airflow/dags/load_ergast_data.py                                1           0  1.20s           2026-08-20T16:08:52
+/opt/airflow/dags/driver_standings.py                                1           0  0.49s           2026-08-20T16:08:52
+/opt/airflow/dags/constructor_standings.py                           1           0  0.26s           2026-08-20T16:08:54
+================================================================================
+[2026-08-20T16:09:33.563+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  0.75s           2026-08-20T16:09:24
+/opt/airflow/dags/driver_standings.py                                1           0  0.59s           2026-08-20T16:09:23
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.34s           2026-08-20T16:09:28
+/opt/airflow/dags/constructor_standings.py                           1           0  0.29s           2026-08-20T16:09:25
+================================================================================
+[2026-08-20T16:09:50.277+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-20T16:09:50.367+0000] {manager.py:740} INFO - There are 4 files in /opt/airflow/dags
+[2026-08-20T16:10:04.662+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py         667  9.64s             1           0  0.75s           2026-08-20T16:09:24
+/opt/airflow/dags/driver_standings.py         665  9.81s             1           0  0.59s           2026-08-20T16:09:23
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.34s           2026-08-20T16:09:28
+/opt/airflow/dags/constructor_standings.py                           1           0  0.29s           2026-08-20T16:09:25
+================================================================================
+[2026-08-20T16:10:36.161+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  12.85s          2026-08-20T16:10:07
+/opt/airflow/dags/driver_standings.py                                1           0  12.42s          2026-08-20T16:10:07
+/opt/airflow/dags/constructor_standings.py                           1           0  0.85s           2026-08-20T16:10:08
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.26s           2026-08-20T16:10:08
+================================================================================
+[2026-08-20T16:11:07.004+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  4.53s           2026-08-20T16:10:42
+/opt/airflow/dags/constructor_standings.py                           1           0  0.94s           2026-08-20T16:10:39
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.73s           2026-08-20T16:10:39
+/opt/airflow/dags/driver_standings.py                                1           0  0.30s           2026-08-20T16:10:37
+================================================================================
+[2026-08-20T16:11:38.387+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  0.97s           2026-08-20T16:11:13
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.32s           2026-08-20T16:11:10
+/opt/airflow/dags/constructor_standings.py                           1           0  0.30s           2026-08-20T16:11:10
+/opt/airflow/dags/driver_standings.py         728  0.16s             1           0  0.28s           2026-08-20T16:11:07
+================================================================================
+[2026-08-20T16:12:09.330+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/driver_standings.py         749  0.01s             1           0  0.86s           2026-08-20T16:11:39
+/opt/airflow/dags/load_ergast_data.py                                1           0  0.68s           2026-08-20T16:11:44
+/opt/airflow/dags/constructor_standings.py                           1           0  0.29s           2026-08-20T16:11:40
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.25s           2026-08-20T16:11:40
+================================================================================
+[2026-08-20T16:12:40.417+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  0.75s           2026-08-20T16:12:15
+/opt/airflow/dags/constructor_standings.py                           1           0  0.43s           2026-08-20T16:12:11
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.27s           2026-08-20T16:12:11
+/opt/airflow/dags/driver_standings.py         770  0.07s             1           0  0.24s           2026-08-20T16:12:09
+================================================================================
+[2026-08-20T16:13:11.570+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  1.21s           2026-08-20T16:12:47
+/opt/airflow/dags/driver_standings.py         791  0.02s             1           0  1.03s           2026-08-20T16:12:41
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.74s           2026-08-20T16:12:42
+/opt/airflow/dags/constructor_standings.py                           1           0  0.47s           2026-08-20T16:12:41
+================================================================================
+[2026-08-20T16:13:42.454+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  0.75s           2026-08-20T16:13:18
+/opt/airflow/dags/constructor_standings.py                           1           0  0.67s           2026-08-20T16:13:12
+/opt/airflow/dags/driver_standings.py         812  0.01s             1           0  0.64s           2026-08-20T16:13:12
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.32s           2026-08-20T16:13:12
+================================================================================
+[2026-08-20T16:14:13.466+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  1.86s           2026-08-20T16:13:50
+/opt/airflow/dags/lap_time_analysis.py        836  0.02s             1           0  0.64s           2026-08-20T16:13:43
+/opt/airflow/dags/driver_standings.py         833  0.56s             1           0  0.26s           2026-08-20T16:13:42
+/opt/airflow/dags/constructor_standings.py                           1           0  0.23s           2026-08-20T16:13:43
+================================================================================
+[2026-08-20T16:14:45.002+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  2.64s           2026-08-20T16:14:22
+/opt/airflow/dags/lap_time_analysis.py                               1           0  1.03s           2026-08-20T16:14:44
+/opt/airflow/dags/driver_standings.py                                1           0  0.90s           2026-08-20T16:14:44
+/opt/airflow/dags/constructor_standings.py    864  0.05s             1           0  0.64s           2026-08-20T16:14:14
+================================================================================
+[2026-08-20T16:14:50.321+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-20T16:14:50.411+0000] {manager.py:740} INFO - There are 4 files in /opt/airflow/dags
+[2026-08-20T16:15:16.232+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  3.49s           2026-08-20T16:14:56
+/opt/airflow/dags/driver_standings.py                                1           0  0.97s           2026-08-20T16:15:16
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.86s           2026-08-20T16:15:16
+/opt/airflow/dags/constructor_standings.py    885  0.04s             1           0  0.53s           2026-08-20T16:14:45
+================================================================================
+[2026-08-20T16:15:47.094+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  0.97s           2026-08-20T16:15:27
+/opt/airflow/dags/driver_standings.py         896  0.23s             1           0  0.97s           2026-08-20T16:15:16
+/opt/airflow/dags/constructor_standings.py                           1           0  0.87s           2026-08-20T16:15:17
+/opt/airflow/dags/lap_time_analysis.py        899  0.17s             1           0  0.86s           2026-08-20T16:15:16
+================================================================================
+[2026-08-20T16:16:18.049+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/driver_standings.py                                1           0  6.57s           2026-08-20T16:15:53
+/opt/airflow/dags/lap_time_analysis.py                               1           0  5.10s           2026-08-20T16:15:52
+/opt/airflow/dags/constructor_standings.py                           1           0  1.80s           2026-08-20T16:15:54
+/opt/airflow/dags/load_ergast_data.py                                1           0  1.70s           2026-08-20T16:15:59
+================================================================================
+[2026-08-20T16:16:48.920+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  2.72s           2026-08-20T16:16:32
+/opt/airflow/dags/lap_time_analysis.py                               1           0  1.98s           2026-08-20T16:16:24
+/opt/airflow/dags/driver_standings.py                                1           0  1.10s           2026-08-20T16:16:24
+/opt/airflow/dags/constructor_standings.py                           1           0  0.68s           2026-08-20T16:16:25
+================================================================================
+[2026-08-20T16:17:19.794+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  5.29s           2026-08-20T16:17:08
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.98s           2026-08-20T16:16:55
+/opt/airflow/dags/driver_standings.py                                1           0  0.84s           2026-08-20T16:16:56
+/opt/airflow/dags/constructor_standings.py                           1           0  0.63s           2026-08-20T16:16:56
+================================================================================
+[2026-08-20T16:17:50.808+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/lap_time_analysis.py                               1           0  3.49s           2026-08-20T16:17:29
+/opt/airflow/dags/driver_standings.py                                1           0  1.69s           2026-08-20T16:17:29
+/opt/airflow/dags/load_ergast_data.py                                1           0  0.84s           2026-08-20T16:17:39
+/opt/airflow/dags/constructor_standings.py                           1           0  0.46s           2026-08-20T16:17:29
+================================================================================
+[2026-08-20T16:18:22.761+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/constructor_standings.py                           1           0  2.01s           2026-08-20T16:18:01
+/opt/airflow/dags/load_ergast_data.py         995  11.49s            1           0  0.84s           2026-08-20T16:17:39
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.49s           2026-08-20T16:18:00
+/opt/airflow/dags/driver_standings.py                                1           0  0.29s           2026-08-20T16:17:59
+================================================================================
+[2026-08-20T16:18:54.356+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  16.07s          2026-08-20T16:18:26
+/opt/airflow/dags/lap_time_analysis.py                               1           0  3.60s           2026-08-20T16:18:34
+/opt/airflow/dags/constructor_standings.py                           1           0  2.29s           2026-08-20T16:18:34
+/opt/airflow/dags/driver_standings.py                                1           0  2.20s           2026-08-20T16:18:32
+================================================================================
+[2026-08-20T16:19:26.926+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/driver_standings.py                                1           0  2.96s           2026-08-20T16:19:06
+/opt/airflow/dags/load_ergast_data.py                                1           0  2.12s           2026-08-20T16:18:58
+/opt/airflow/dags/constructor_standings.py                           1           0  0.91s           2026-08-20T16:19:06
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.34s           2026-08-20T16:19:06
+================================================================================
+[2026-08-20T16:19:50.463+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-20T16:19:50.515+0000] {manager.py:740} INFO - There are 4 files in /opt/airflow/dags
+[2026-08-20T16:19:58.152+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/load_ergast_data.py                                1           0  5.33s           2026-08-20T16:19:34
+/opt/airflow/dags/driver_standings.py                                1           0  2.39s           2026-08-20T16:19:39
+/opt/airflow/dags/lap_time_analysis.py                               1           0  2.01s           2026-08-20T16:19:40
+/opt/airflow/dags/constructor_standings.py                           1           0  1.58s           2026-08-20T16:19:38
+================================================================================
+[2026-08-20T16:20:29.118+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/constructor_standings.py                           1           0  1.09s           2026-08-20T16:20:09
+/opt/airflow/dags/load_ergast_data.py                                1           0  0.95s           2026-08-20T16:20:06
+/opt/airflow/dags/driver_standings.py                                1           0  0.70s           2026-08-20T16:20:10
+/opt/airflow/dags/lap_time_analysis.py                               1           0  0.53s           2026-08-20T16:20:11
+================================================================================

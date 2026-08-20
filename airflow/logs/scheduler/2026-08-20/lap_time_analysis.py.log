@@ -1,0 +1,210 @@
+[2026-08-20T16:04:56.027+0000] {processor.py:161} INFO - Started process (PID=261) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:04:56.037+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:04:56.044+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:04:56.043+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:04:56.574+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:04:56.694+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:04:56.693+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:04:56.840+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:04:56.840+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:04:56.987+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.982 seconds
+[2026-08-20T16:05:28.276+0000] {processor.py:161} INFO - Started process (PID=298) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:05:28.278+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:05:28.282+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:05:28.281+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:05:28.430+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:05:28.539+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:05:28.539+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:05:28.551+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:05:28.551+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:05:28.583+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.317 seconds
+[2026-08-20T16:06:07.136+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:06:07.144+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:06:07.163+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:06:07.155+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:06:07.750+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:06:07.864+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:06:07.864+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:06:07.918+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:06:07.918+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:06:08.009+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.943 seconds
+[2026-08-20T16:06:40.506+0000] {processor.py:161} INFO - Started process (PID=399) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:06:40.509+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:06:40.512+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:06:40.511+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:06:40.681+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:06:40.720+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:06:40.720+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:06:40.738+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:06:40.737+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:06:40.768+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.276 seconds
+[2026-08-20T16:07:17.867+0000] {processor.py:161} INFO - Started process (PID=524) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:07:17.871+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:07:17.883+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:07:17.881+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:07:18.501+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:07:18.701+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:07:18.701+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:07:18.897+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:07:18.897+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:07:19.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 1.956 seconds
+[2026-08-20T16:07:51.118+0000] {processor.py:161} INFO - Started process (PID=595) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:07:51.122+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:07:51.167+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:07:51.167+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:07:51.709+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:07:52.497+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:07:52.494+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:07:52.567+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:07:52.566+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:07:52.683+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 1.572 seconds
+[2026-08-20T16:08:23.193+0000] {processor.py:161} INFO - Started process (PID=616) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:08:23.355+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:08:23.716+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:08:23.710+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:08:24.744+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:08:24.949+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:08:24.949+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:08:25.053+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:08:25.053+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:08:25.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 1.987 seconds
+[2026-08-20T16:08:56.014+0000] {processor.py:161} INFO - Started process (PID=639) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:08:56.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:08:56.132+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:08:56.131+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:08:56.627+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:08:56.675+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:08:56.674+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:08:56.696+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:08:56.695+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:08:57.156+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 1.149 seconds
+[2026-08-20T16:09:28.210+0000] {processor.py:161} INFO - Started process (PID=660) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:09:28.212+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:09:28.225+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:09:28.224+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:09:28.404+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:09:28.431+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:09:28.431+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:09:28.446+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:09:28.446+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:09:28.469+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.266 seconds
+[2026-08-20T16:10:07.843+0000] {processor.py:161} INFO - Started process (PID=679) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:10:07.845+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:10:07.847+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:10:07.847+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:10:07.963+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:10:07.995+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:10:07.994+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:10:08.009+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:10:08.009+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:10:08.063+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.227 seconds
+[2026-08-20T16:10:39.344+0000] {processor.py:161} INFO - Started process (PID=700) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:10:39.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:10:39.419+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:10:39.417+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:10:39.681+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:10:39.791+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:10:39.791+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:10:39.870+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:10:39.870+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:10:39.925+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.667 seconds
+[2026-08-20T16:11:10.066+0000] {processor.py:161} INFO - Started process (PID=717) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:11:10.068+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:11:10.070+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:11:10.070+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:11:10.208+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:11:10.267+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:11:10.266+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:11:10.325+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:11:10.325+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:11:10.348+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.287 seconds
+[2026-08-20T16:11:40.452+0000] {processor.py:161} INFO - Started process (PID=738) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:11:40.454+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:11:40.457+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:11:40.456+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:11:40.574+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:11:40.615+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:11:40.614+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:11:40.634+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:11:40.633+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:11:40.661+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.216 seconds
+[2026-08-20T16:12:11.056+0000] {processor.py:161} INFO - Started process (PID=759) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:12:11.058+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:12:11.060+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:12:11.060+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:12:11.186+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:12:11.223+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:12:11.222+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:12:11.242+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:12:11.241+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:12:11.289+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.238 seconds
+[2026-08-20T16:12:41.475+0000] {processor.py:161} INFO - Started process (PID=778) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:12:41.487+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:12:41.506+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:12:41.502+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:12:41.707+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:12:41.830+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:12:41.829+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:12:42.081+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:12:42.080+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:12:42.139+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.687 seconds
+[2026-08-20T16:13:12.281+0000] {processor.py:161} INFO - Started process (PID=799) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:13:12.283+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:13:12.286+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:13:12.285+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:13:12.461+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:13:12.502+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:13:12.502+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:13:12.520+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:13:12.520+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:13:12.544+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.278 seconds
+[2026-08-20T16:13:42.793+0000] {processor.py:161} INFO - Started process (PID=817) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:13:42.800+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:13:42.811+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:13:42.809+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:13:43.149+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:13:43.221+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:13:43.221+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:13:43.297+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:13:43.296+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:13:43.346+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.598 seconds
+[2026-08-20T16:14:13.521+0000] {processor.py:161} INFO - Started process (PID=836) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:14:13.524+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:14:13.533+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:14:13.531+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:14:13.732+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:14:13.768+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:14:13.768+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:14:13.786+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:14:13.785+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:14:13.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.331 seconds
+[2026-08-20T16:14:44.044+0000] {processor.py:161} INFO - Started process (PID=857) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:14:44.056+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:14:44.061+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:14:44.060+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:14:44.458+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:14:44.645+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:14:44.644+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:14:44.760+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:14:44.759+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:14:44.906+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.932 seconds
+[2026-08-20T16:15:15.332+0000] {processor.py:161} INFO - Started process (PID=878) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:15:15.340+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:15:15.350+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:15:15.349+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:15:15.826+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:15:15.989+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:15:15.988+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:15:16.052+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:15:16.051+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:15:16.121+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.804 seconds
+[2026-08-20T16:15:47.065+0000] {processor.py:161} INFO - Started process (PID=899) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:15:47.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:15:47.156+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:15:47.155+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:15:50.499+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:15:51.190+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:15:51.188+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:15:51.619+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:15:51.618+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:15:51.912+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 4.062 seconds
+[2026-08-20T16:16:22.228+0000] {processor.py:161} INFO - Started process (PID=917) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:16:22.233+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:16:22.251+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:16:22.250+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:16:23.116+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:16:23.469+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:16:23.468+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:16:23.740+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:16:23.739+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:16:24.029+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 1.842 seconds
+[2026-08-20T16:16:54.860+0000] {processor.py:161} INFO - Started process (PID=938) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:16:54.865+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:16:54.877+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:16:54.876+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:16:55.450+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:16:55.546+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:16:55.545+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:16:55.592+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:16:55.591+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:16:55.649+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.822 seconds
+[2026-08-20T16:17:26.122+0000] {processor.py:161} INFO - Started process (PID=959) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:17:26.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:17:26.293+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:17:26.291+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:17:28.831+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:17:29.062+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:17:29.055+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:17:29.196+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:17:29.195+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:17:29.299+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 3.234 seconds
+[2026-08-20T16:17:59.616+0000] {processor.py:161} INFO - Started process (PID=983) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:17:59.618+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:17:59.623+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:17:59.622+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:17:59.804+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:17:59.927+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:17:59.927+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:17:59.998+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:17:59.997+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:18:00.052+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.446 seconds
+[2026-08-20T16:18:30.819+0000] {processor.py:161} INFO - Started process (PID=1004) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:18:30.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:18:30.863+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:18:30.858+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:18:32.308+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:18:33.265+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:18:33.264+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:18:33.370+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:18:33.370+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:18:33.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 3.058 seconds
+[2026-08-20T16:19:06.173+0000] {processor.py:161} INFO - Started process (PID=1030) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:19:06.177+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:19:06.180+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:19:06.180+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:19:06.320+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:19:06.350+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:19:06.350+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:19:06.364+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:19:06.364+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:19:06.390+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.233 seconds
+[2026-08-20T16:19:38.501+0000] {processor.py:161} INFO - Started process (PID=1051) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:19:38.506+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:19:38.543+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:19:38.540+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:19:39.607+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:19:39.906+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:19:39.904+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:19:40.122+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:19:40.120+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:19:40.305+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 1.885 seconds
+[2026-08-20T16:20:10.734+0000] {processor.py:161} INFO - Started process (PID=1074) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:20:10.738+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:20:10.745+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:20:10.744+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:20:10.923+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:20:11.006+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:20:11.005+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:20:11.083+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:20:11.082+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:20:11.182+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.472 seconds
+[2026-08-20T16:20:42.544+0000] {processor.py:161} INFO - Started process (PID=1093) to work on /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:20:42.546+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lap_time_analysis.py for tasks to queue
+[2026-08-20T16:20:42.549+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:20:42.548+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:20:42.817+0000] {processor.py:840} INFO - DAG(s) 'lap_time_analysis' retrieved from /opt/airflow/dags/lap_time_analysis.py
+[2026-08-20T16:20:42.857+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:20:42.856+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:20:42.876+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:20:42.876+0000] {dag.py:3954} INFO - Setting next_dagrun for lap_time_analysis to None, run_after=None
+[2026-08-20T16:20:42.912+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lap_time_analysis.py took 0.376 seconds
