@@ -208,3 +208,84 @@
 [2026-08-20T16:20:42.299+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:20:42.298+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-08-20T16:20:42.337+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:20:42.336+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
 [2026-08-20T16:20:42.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 1.745 seconds
+[2026-08-20T16:21:12.962+0000] {processor.py:161} INFO - Started process (PID=1100) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T16:21:12.970+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T16:21:12.984+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:21:12.981+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T16:21:13.233+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T16:21:13.390+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:21:13.389+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:21:13.465+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:21:13.465+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
+[2026-08-20T16:21:13.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 0.588 seconds
+[2026-08-20T16:21:44.855+0000] {processor.py:161} INFO - Started process (PID=1121) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T16:21:44.865+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T16:21:44.899+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:21:44.895+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T16:21:46.055+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T16:21:46.505+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:21:46.504+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T16:21:46.612+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:21:46.612+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
+[2026-08-20T16:21:46.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 1.947 seconds
+[2026-08-20T16:22:17.574+0000] {processor.py:161} INFO - Started process (PID=1142) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T16:22:17.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T16:22:17.638+0000] {logging_mixin.py:188} INFO - [2026-08-20T16:22:17.628+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:09:04.555+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:09:34.929+0000] {processor.py:161} INFO - Started process (PID=1159) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:09:34.934+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T17:09:34.967+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:09:34.962+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:09:35.958+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:09:36.201+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:09:36.201+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T17:09:36.381+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:09:36.381+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
+[2026-08-20T17:09:36.980+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 2.119 seconds
+[2026-08-20T17:10:07.994+0000] {processor.py:161} INFO - Started process (PID=1185) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:10:08.005+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T17:10:08.027+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:10:08.024+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:10:08.704+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:10:08.833+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:10:08.833+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T17:10:08.848+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:10:08.848+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
+[2026-08-20T17:10:08.966+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 1.039 seconds
+[2026-08-20T17:10:42.632+0000] {processor.py:161} INFO - Started process (PID=1204) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:10:42.641+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T17:10:42.648+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:10:42.647+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:10:43.051+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:10:43.230+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:10:43.229+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T17:10:43.278+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:10:43.278+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
+[2026-08-20T17:10:43.347+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 0.761 seconds
+[2026-08-20T17:11:13.838+0000] {processor.py:161} INFO - Started process (PID=1222) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:11:13.841+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T17:11:13.852+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:11:13.845+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:11:14.060+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:11:14.109+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:11:14.108+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T17:11:14.145+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:11:14.145+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
+[2026-08-20T17:11:14.203+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 0.386 seconds
+[2026-08-20T17:11:45.167+0000] {processor.py:161} INFO - Started process (PID=1243) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:11:45.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T17:11:45.178+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:11:45.177+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:11:45.409+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:11:45.634+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:11:45.633+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T17:11:45.675+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:11:45.674+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
+[2026-08-20T17:11:45.738+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 0.593 seconds
+[2026-08-20T17:12:16.011+0000] {processor.py:161} INFO - Started process (PID=1264) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:12:16.013+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T17:12:16.016+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:12:16.015+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:12:16.160+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:12:16.200+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:12:16.200+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T17:12:16.218+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:12:16.218+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
+[2026-08-20T17:12:16.245+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 0.241 seconds
+[2026-08-20T17:12:46.363+0000] {processor.py:161} INFO - Started process (PID=1285) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:12:46.365+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T17:12:46.368+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:12:46.368+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:12:46.479+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:12:46.514+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:12:46.514+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T17:12:46.529+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:12:46.528+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
+[2026-08-20T17:12:46.584+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 0.229 seconds
+[2026-08-20T17:13:17.095+0000] {processor.py:161} INFO - Started process (PID=1306) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:13:17.109+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T17:13:17.131+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:13:17.128+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:13:17.589+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T17:13:17.650+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:13:17.649+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T17:13:17.665+0000] {logging_mixin.py:188} INFO - [2026-08-20T17:13:17.664+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
+[2026-08-20T17:13:17.688+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 0.606 seconds
+[2026-08-20T21:04:06.382+0000] {processor.py:161} INFO - Started process (PID=1327) to work on /opt/airflow/dags/driver_standings.py
+[2026-08-20T21:04:06.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/driver_standings.py for tasks to queue
+[2026-08-20T21:04:06.972+0000] {logging_mixin.py:188} INFO - [2026-08-20T21:04:06.933+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/driver_standings.py
+[2026-08-20T21:04:09.573+0000] {processor.py:840} INFO - DAG(s) 'driver_standings' retrieved from /opt/airflow/dags/driver_standings.py
+[2026-08-20T21:04:09.794+0000] {logging_mixin.py:188} INFO - [2026-08-20T21:04:09.794+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-08-20T21:04:09.986+0000] {logging_mixin.py:188} INFO - [2026-08-20T21:04:09.986+0000] {dag.py:3954} INFO - Setting next_dagrun for driver_standings to None, run_after=None
+[2026-08-20T21:04:10.307+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/driver_standings.py took 5.084 seconds
