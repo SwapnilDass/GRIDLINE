@@ -1,0 +1,25 @@
+# Environment / secrets
+.env
+*.env
+!*.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# FastF1 / telemetry cache
+backend/cache/
+
+# Airflow runtime
+airflow/logs/
+airflow/plugins/__pycache__/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# OS junk
+.DS_Store
+Thumbs.db

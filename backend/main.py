@@ -334,15 +334,3 @@ def driver_standings():
         raise HTTPException(status_code=500, detail=f"DB error: {e}")
 
     return {"results": [dict(r) for r in rows]}
-
-
-
-
-
-
-
-
-
-
-#pushed
-#pushed
