@@ -2,6 +2,7 @@ import pdfplumber
 import re
 import os
 import glob
+import json
 
 
 LABEL_MAP = {
@@ -41,6 +42,17 @@ def extract_penalty_points(decision_text):
 def extract_turn(fact_text):
         match = re.search(r"[Tt]urn\s+(\d+)", fact_text)
         return int(match.group(1)) if match else None
+
+
+def save_as_json(data, output_path):
+    with open(output_path, "w") as f:
+        json.dump(data, f, indent=2)
+
+
+def get_output_path(pdf_path):
+    filename = os.path.basename(pdf_path)
+    json_filename = filename.replace(".pdf", ".json")
+    return os.path.join("verdict/data/parsed", json_filename)
 
 
 def parse_decision(pdf_path):
@@ -84,13 +96,19 @@ def parse_decision(pdf_path):
 if __name__ == "__main__":
     pdf_folder = "verdict/data/raw"
     pdf_files = glob.glob(os.path.join(pdf_folder, "*.pdf"))
+    os.makedirs("verdict/data/parsed", exist_ok=True)
+
 
     for pdf_path in pdf_files:
         print(f"=== {pdf_path} ===")
         try:
             data = parse_decision(pdf_path)
-            for key, value in data.items():
-                print(f"{key}: {value}")
+            output_path = get_output_path(pdf_path)
+            save_as_json(data, output_path)
+            print(f"Saved {output_path}")
         except Exception as e:
             print(f"FAILED: {e}")
-        print()
+
+
+
+

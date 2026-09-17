@@ -1,0 +1,14 @@
+{
+  "Time": "15:03",
+  "Driver": "77 - Valtteri Bottas",
+  "Competitor": "Mercedes-AMG Petronas F1 Team",
+  "Session": "Race",
+  "Fact": "Causing an avoidable collision in turn 1.",
+  "Infringement": "Breach of Article 2 d) Chapter IV Appendix L of the FIA International Sporting Code.",
+  "Decision": "Drop of 5 grid positions at the drivers\u2019 next event 2 Penalty Points (4 points in a 12 month period)",
+  "Reason": "The Stewards reviewed video. Immediately after the start, in the braking zone to turn 1, car 77 collided with the rear of car 4. The Stewards took into consideration the track conditions however the driver of car 77 was fully to blame for the collision.",
+  "own_car": 77,
+  "other_car": 4,
+  "penalty_points": 2,
+  "turn": 1
+}

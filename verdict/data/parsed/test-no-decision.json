@@ -1,0 +1,14 @@
+{
+  "Time": "17:25",
+  "Driver": "44 - Lewis Hamilton",
+  "Competitor": "Mercedes-AMG PETRONAS F1 Team",
+  "Session": "Race",
+  "Fact": "Car 44 collided with Car 10 at Turn 6 after Car 10 locked its brakes.",
+  "Infringement": "Alleged breach of Appendix L, Chapter IV, Article 2 d) of the FIA International Sporting Code.",
+  "Decision": "No further action.",
+  "Reason": "The Stewards reviewed positioning/marshalling system data, video, team radio and in-car video evidence. Car 10 locked its front right tyre into Turn 6 resulting in that car approaching the turn on a slightly different line at a slightly lower speed which was obviously unexpected by the driver of Car 44. Car 44 made light contact with the rear of Car 10 in the Turn. The Stewards determine that no driver was wholly or predominantly to blame.",
+  "own_car": 44,
+  "other_car": 10,
+  "penalty_points": null,
+  "turn": 6
+}
