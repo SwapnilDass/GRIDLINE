@@ -1,3 +1,4 @@
 pdfplumber
 pytest
 reportlab
+psycopg2-binary
