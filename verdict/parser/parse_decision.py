@@ -23,6 +23,20 @@ def get_lines(pdf_path):
         text = pdf.pages[0].extract_text()
     return text.split("\n")
 
+
+
+def extract_race_info(lines):
+    pattern = r"(\d{4})\s+(.+?)\s+GRAND PRIX"
+    for line in lines:
+        match = re.search(pattern, line)
+        if match:
+            year = int(match.group(1))
+            event = match.group(2).title()
+            return year, event
+    return None, None
+
+
+
 def extract_own_car(driver_text):
     match = re.search(r"^(\d+)", driver_text)
     return int(match.group(1)) if match else None
@@ -55,8 +69,10 @@ def get_output_path(pdf_path):
     return os.path.join("verdict/data/parsed", json_filename)
 
 
+
 def parse_decision(pdf_path):
     lines = get_lines(pdf_path)
+    race_year, race_event = extract_race_info(lines)
     result = {}
     current_label = None
     buffer = []
@@ -88,6 +104,8 @@ def parse_decision(pdf_path):
 
     result["penalty_points"] = extract_penalty_points(result["Decision"])
 
+    result["race_year"] = race_year
+    result["race_event"] = race_event
 
     result["turn"] = extract_turn(result["Fact"])
 

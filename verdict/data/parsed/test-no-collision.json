@@ -10,5 +10,7 @@
   "own_car": 5,
   "other_car": 43,
   "penalty_points": null,
+  "race_year": 2026,
+  "race_event": "Spanish",
   "turn": 5
 }

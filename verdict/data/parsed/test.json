@@ -10,5 +10,7 @@
   "own_car": 77,
   "other_car": 20,
   "penalty_points": 3,
+  "race_year": 2024,
+  "race_event": "Abu Dhabi",
   "turn": 6
 }

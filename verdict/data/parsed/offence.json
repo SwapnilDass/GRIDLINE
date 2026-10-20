@@ -10,5 +10,7 @@
   "own_car": 77,
   "other_car": 4,
   "penalty_points": 2,
+  "race_year": 2021,
+  "race_event": "Hungarian",
   "turn": 1
 }

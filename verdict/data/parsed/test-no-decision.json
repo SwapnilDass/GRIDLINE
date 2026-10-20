@@ -10,5 +10,7 @@
   "own_car": 44,
   "other_car": 10,
   "penalty_points": null,
+  "race_year": 2023,
+  "race_event": "Abu Dhabi",
   "turn": 6
 }
