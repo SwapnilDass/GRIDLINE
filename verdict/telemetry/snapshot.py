@@ -23,7 +23,11 @@ def get_telemetry_snapshot(race_year, race_event, own_car, other_car, incident_t
 
     # Find the lap whose start time is the closest one before our estimated incident time
     candidate_laps = own_laps[own_laps["LapStartDate"] <= estimated_utc]
-    target_lap = candidate_laps.iloc[-1]
+    if len(candidate_laps) > 0:
+        target_lap = candidate_laps.iloc[-1]
+    else:
+        target_lap = own_laps.iloc[0]
+
 
     window = target_lap.get_telemetry().copy()
     window["SpeedChange"] = window["Speed"].diff()
