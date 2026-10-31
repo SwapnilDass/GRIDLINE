@@ -1,0 +1,16 @@
+{
+  "Time": "15:04",
+  "Driver": "31 - Esteban Ocon",
+  "Competitor": "BWT Alpine F1 Team",
+  "Session": "Race",
+  "Fact": "Collision between Car 31 & Car 10 in Turn 8.",
+  "Infringement": "Breach of Appendix L, Chapter IV, Article 2 d) of the FIA International Sporting Code.",
+  "Decision": "10 second time penalty, converted to a drop of 5 grid positions for the next Race in which the driver participates. 2 penalty points (total of 3 for the 12 month period).",
+  "Reason": "The Stewards reviewed video and in-car video evidence and determined that Car 31 attempted to overtake Car 10 at Turn 8. The attempt resulted in the cars coming together, Car 31 being flung into the air and damaging the car. As the race was red flagged shortly thereafter, the cars returned to the pits and Car 31 retired. It was clear to us that the collision was caused solely by the overly ambitious overtaking attempt, from too far back, by Car 31 and was therefore wholly to blame for the incident. The baseline penalty for causing a collision in this season is a 10 second time penalty. This is what we imposed on Car 31. However, given that Car 31 did not finish the race, it will be converted to a drop of 5 grid positions for the next race in which the driver participates.",
+  "own_car": 31,
+  "other_car": 10,
+  "penalty_points": 2,
+  "race_year": 2024,
+  "race_event": "Monaco",
+  "turn": 8
+}

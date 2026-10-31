@@ -36,6 +36,16 @@ if __name__ == "__main__":
              own_car=5, other_car=43, incident_time="16:19", utc_offset_hours=2),
         dict(source_file="test-no-decision.pdf", race_year=2023, race_event="Abu Dhabi",
              own_car=44, other_car=10, incident_time="17:25", utc_offset_hours=4),
+        dict(source_file="2024_abudhabi_car1.pdf", race_year=2024, race_event="Abu Dhabi",
+             own_car=1, other_car=81, incident_time="17:03", utc_offset_hours=4),
+        dict(source_file="2024_abudhabi_car81.pdf", race_year=2024, race_event="Abu Dhabi",
+             own_car=81, other_car=43, incident_time="17:08", utc_offset_hours=4),
+        dict(source_file="2024_miami_car14.pdf", race_year=2024, race_event="Miami",
+             own_car=14, other_car=4, incident_time="12:03", utc_offset_hours=-4),
+        dict(source_file="2024_miami_car44.pdf", race_year=2024, race_event="Miami",
+             own_car=44, other_car=14, incident_time="12:03", utc_offset_hours=-4),
+        dict(source_file="2024_monaco_car31.pdf", race_year=2024, race_event="Monaco",
+             own_car=31, other_car=10, incident_time="15:04", utc_offset_hours=2),
     ]
 
     for d in decisions:

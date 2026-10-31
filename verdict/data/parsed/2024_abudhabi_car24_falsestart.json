@@ -1,0 +1,16 @@
+{
+  "Time": "17:03",
+  "Driver": "24 - Zhou Guanyu",
+  "Competitor": "Kick Sauber F1 Team",
+  "Session": "Race",
+  "Fact": "False start.",
+  "Infringement": "Breach of Article 48.1 a) of the FIA Formula One Sporting Regulations.",
+  "Decision": "5 second time penalty.",
+  "Reason": "The Stewards reviewed video and in-car video evidence. Car 24 moved after the four second light was illuminated and before the start signal was given, this being a breach of Art. 48.1 a). The Stewards acknowledge that the movement was very slight and no significant sporting advantage was gained and therefore impose the least severe penalty applicable to such infringement.",
+  "own_car": 24,
+  "other_car": null,
+  "penalty_points": null,
+  "race_year": 2024,
+  "race_event": "Abu Dhabi",
+  "turn": null
+}

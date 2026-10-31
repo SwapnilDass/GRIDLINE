@@ -1,0 +1,16 @@
+{
+  "Time": "18:27",
+  "Driver": "18 - Lance Stroll",
+  "Competitor": "Aston Martin Aramco F1 Team",
+  "Session": "Race",
+  "Fact": "Leaving the track without a justifiable reason multiple times.",
+  "Infringement": "Breach of Article 33.3 of the FIA Formula One Sporting Regulations.",
+  "Decision": "5 second time penalty. (5 seconds added to elapsed Race time).",
+  "Reason": "The Stewards reviewed video evidence and found that Car 18 left the track on four (4) occasions without justifiable reason, after having received the black and white flag on the third (3rd) occasion. This was a breach of Article 33.3 of the FIA Formula One Sporting Regulations. As per the penalty guidelines, this attracts a 5 second time penalty, which we accordingly impose.",
+  "own_car": 18,
+  "other_car": null,
+  "penalty_points": null,
+  "race_year": 2024,
+  "race_event": "Abu Dhabi",
+  "turn": null
+}

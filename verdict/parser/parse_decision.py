@@ -41,6 +41,10 @@ def extract_own_car(driver_text):
     match = re.search(r"^(\d+)", driver_text)
     return int(match.group(1)) if match else None
 
+def extract_own_car_from_fact(fact_text):
+    match = re.search(r"[Cc]ar\s+(\d+)", fact_text)
+    return int(match.group(1)) if match else None
+
 def extract_other_car(fact_text, reason_text, own_car):
     for text in (fact_text, reason_text):
         cars = [int(n) for n in re.findall(r"[Cc]ar\s+(\d+)", text)]
@@ -98,7 +102,11 @@ def parse_decision(pdf_path):
 
     result["Reason"] = result["Reason"].split("Competitors are reminded")[0].strip()
 
-    result["own_car"] = extract_own_car(result["Driver"])
+    if "Driver" in result:
+        result["own_car"] = extract_own_car(result["Driver"])
+    else:
+        result["Driver"] = None
+        result["own_car"] = extract_own_car_from_fact(result["Fact"])
 
     result["other_car"] = extract_other_car(result["Fact"], result["Reason"], result["own_car"])
 

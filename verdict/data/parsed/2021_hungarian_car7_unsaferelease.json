@@ -1,0 +1,16 @@
+{
+  "Time": "15:35",
+  "Driver": "7 - Kimi Raikkonen",
+  "Competitor": "Alfa Romeo Racing ORLEN",
+  "Session": "Race",
+  "Fact": "Unsafe release of car 7.",
+  "Infringement": "Breach of Article 28.13 a) of the FIA Formula One Sporting Regulations.",
+  "Decision": "10 seconds time penalty.",
+  "Reason": "The Stewards reviewed video evidence. The team released the car after a pit stop during the race. When leaving his pit stop position, RAI caused a collision with MAZ, who was driving on the fast lane.",
+  "own_car": 7,
+  "other_car": null,
+  "penalty_points": null,
+  "race_year": 2021,
+  "race_event": "Hungarian",
+  "turn": null
+}

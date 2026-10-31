@@ -1,0 +1,16 @@
+{
+  "Time": "15:03",
+  "Driver": "18 - Lance Stroll",
+  "Competitor": "Aston Martin Cognizant F1 Team",
+  "Session": "Race",
+  "Fact": "Causing an avoidable collision in turn 1.",
+  "Infringement": "Breach of Article 2 d) Chapter IV Appendix L of the FIA International Sporting Code.",
+  "Decision": "Drop of 5 grid positions at the drivers\u2019 next event 2 Penalty Points (6 points in a 12 month period)",
+  "Reason": "The Stewards reviewed video. Immediately after the start, in the braking zone to turn 1, car 18 collided with car 16. The Stewards took into consideration the track conditions however the driver of car 18 was fully to blame for the collision.",
+  "own_car": 18,
+  "other_car": 16,
+  "penalty_points": 2,
+  "race_year": 2021,
+  "race_event": "Hungarian",
+  "turn": 1
+}

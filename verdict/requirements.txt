@@ -2,3 +2,5 @@ pdfplumber
 pytest
 reportlab
 psycopg2-binary
+fastf1
+pandas

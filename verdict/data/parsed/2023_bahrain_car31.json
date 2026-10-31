@@ -1,0 +1,16 @@
+{
+  "Time": "18:03",
+  "Driver": "31 - Esteban Ocon",
+  "Competitor": "BWT Alpine F1 Team",
+  "Session": "Race",
+  "Fact": "Inaccurate start position.",
+  "Infringement": "Breach of Article 48.1 c) of the FIA Formula One Sporting Regulations.",
+  "Decision": "5 second time penalty.",
+  "Reason": "The Stewards reviewed video evidence, showing that before the start of the race part of the car\u2019s right front tyre was outside of the starting box.",
+  "own_car": 31,
+  "other_car": null,
+  "penalty_points": null,
+  "race_year": 2023,
+  "race_event": "Bahrain",
+  "turn": null
+}
